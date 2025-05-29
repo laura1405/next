@@ -18,7 +18,7 @@ export default function Noticia() {
               </Form.Text>
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3" controlId="cadastronoticia">
               <Form.Label>Informe a Noticia</Form.Label>
               <Form.Control as="textarea" rows={3} className='bg-warning-subtle' />
             </Form.Group>
@@ -33,7 +33,7 @@ export default function Noticia() {
                 <option value="6">entretrnimento</option>
               </Form.Select>
             </Form.Group>
-            <Button variant="primary" type="submit" className='bg-warning'>
+            <Button variant="primary" type="submit" >
               Submit
             </Button>
           </Form>
