@@ -1,8 +1,4 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Button, Form, Container, Row, Col } from 'react-bootstrap';
 
 export default function Noticia() {
   return (
@@ -11,34 +7,33 @@ export default function Noticia() {
         <Col xs={{ span: 6, offset: 3 }}>
           <Form>
             <Form.Group className="mb-3" controlId="titulonoticia">
-              <Form.Label>Titulo da noticia</Form.Label>
-              <Form.Control type="text" className='bg-warning-subtle' placeholder="Informe o titulo da noticia" />
+              <Form.Label>Título da Notícia</Form.Label>
+              <Form.Control type="text" className='bg-warning-subtle' placeholder="Informe o Título da Notícia" />
               <Form.Text className="text-muted">
-                Informe de forma clara o titulo da noticia
+                Informe de forma clara o título da notícia.
               </Form.Text>
             </Form.Group>
-
-            <Form.Group className="mb-3" controlId="cadastronoticia">
-              <Form.Label>Informe a Noticia</Form.Label>
+            <Form.Group className="mb-3" controlId="conteudonoticia">
+              <Form.Label>Informe a Notícia</Form.Label>
               <Form.Control as="textarea" rows={3} className='bg-warning-subtle' />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="tiponoticia" >
-              <Form.Select aria-label="Selecione o tipo da noticia" className='bg-warning-subtle'>
-                <option>Selecione o tipo da noticia</option>
-                <option value="1">ciencia</option>
-                <option value="2">educação</option>
-                <option value="3">pesquisa</option>
-                <option value="4">esportes</option>
-                <option value="5">cultura</option>
-                <option value="6">entretrnimento</option>
+            <Form.Group className="mb-3" controlId="tiponoticia">
+              <Form.Select aria-label="Selecione o tipo de notícia" className='bg-warning-subtle'>
+                <option>Selecione o Tipo da Notícia</option>
+                <option value="1">Ciência</option>
+                <option value="2">Educação</option>
+                <option value="3">Pesquisa</option>
+                <option value="4">Esportes</option>
+                <option value="5">Cultura</option>
+                <option value="6">Entreterimento</option>
               </Form.Select>
             </Form.Group>
-            <Button variant="primary" type="submit" >
+            <Button variant="primary" type="submit">
               Submit
             </Button>
           </Form>
         </Col>
       </Row>
     </Container>
-  );
+  )
 }
