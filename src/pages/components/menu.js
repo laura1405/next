@@ -5,16 +5,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Menu() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar bg="dark" data-bs-theme="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Brand href="/">Info A</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/Esportes">Esportes</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <Nav.Link href="/esportes">Esportes</Nav.Link>
+            <NavDropdown title="ReactHook´s" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/usestate">UseState</NavDropdown.Item>
+              <NavDropdown.Item href="/useeffect">UseEffect</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -23,6 +24,13 @@ export default function Menu() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Noticias" id="noticias">
+              <NavDropdown.Item href="/cadastro/noticia">Cadastro Notícia</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="FuncaoNext" id="funcaonext">
+              <NavDropdown.Item href="/funcaonext/gssp">GetServerSideProps</NavDropdown.Item>
+              <NavDropdown.Item href="/funcaonext/gssp2">GetServerSideProps-2</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
